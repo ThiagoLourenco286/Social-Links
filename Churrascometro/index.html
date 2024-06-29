@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/Css">
+    <link rel="icon" href="./Icons/churrasco.png" type="icon/css">
+    <title>Churrasco</title>
+</head>
+
+<body>
+
+    <div style="width: 100%;
+                height: 42px;
+                margin-bottom: 20px;
+                background-color: #002130;">
+    </div>
+
+    <div id="Container">
+
+        <div class="header">
+
+            <img src="./imagens/Captura_resize.png" alt="Churrasco">
+
+            <div class="body">
+
+                <h1 class="H">
+                    Churrascometro
+                </h1>
+
+                <p class="description">
+                    Será possível calcular a quantidade necessária e ideal para realizar um churrasco de primeira linha
+                    e com qualidade, sem a preocupação de que os insumos se esgotem.
+
+                    <br>
+
+                    <small>
+                        <sub>*No campo de duração, serão calculados e retornados valores diferentes acima de 6
+                            horas*</sub>
+                    </small>
+
+                </p>
+
+                <input class="inp" type="number" name="Mulher" id="Mulher" placeholder=" Mulheres ">
+                <input class="inp" type="number" name="Homem" id="Homem" placeholder="Homens">
+                <input class="inp" type="number" name="Criancas" id="Criancas" placeholder="Crianças">
+                <input class="inp" type="number" name="Duracao" id="Duracao" placeholder="Duração (H)">
+
+                <button class="btn" onclick="calcularChurras()">Calcular</button>
+
+                <div id="Resultado">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer style="width: 100%;
+            height: 41px;
+            margin-top: 20px;
+            background-color: #002130;">
+    </footer>
+
+    <script src="./javascript/script.js"></script>
+
+</body>
+
+</html>
